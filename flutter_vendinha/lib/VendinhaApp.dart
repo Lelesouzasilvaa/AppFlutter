@@ -7,6 +7,7 @@ class VendinhaApp extends StatelessWidget {
     return MaterialApp(
       home: TelaPrincipal(),
       debugShowCheckedModeBanner: false,
+      
     );
   }
 }
