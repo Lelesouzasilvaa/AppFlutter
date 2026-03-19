@@ -4,6 +4,9 @@ import 'package:flutter_vendinha/TelaPrincipal.dart';
 class VendinhaApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: TelaPrincipal());
+    return MaterialApp(
+      home: TelaPrincipal(),
+      debugShowCheckedModeBanner: false,
+    );
   }
 }

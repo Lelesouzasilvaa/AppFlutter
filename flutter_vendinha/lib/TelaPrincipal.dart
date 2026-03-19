@@ -4,10 +4,7 @@ class TelaPrincipal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text("Home"),
-      ),
+      appBar: AppBar(title: Text("Handbags")),
       body: Center(child: ConteudoTela()),
     );
   }
@@ -16,10 +13,28 @@ class TelaPrincipal extends StatelessWidget {
 class ConteudoTela extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(child: Column(
-      children: [
-        
-      ],
-    ));
+    return Container(
+      child: Column(
+        children: [
+          SizedBox(height: 500, child: Image.asset("assets/bolsa.png")),
+          Container(child: Information()),
+        ],
+      ),
+    );
+  }
+}
+
+class Information extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Row(
+        children: [
+          Text("Nome"),
+          Text("Preço"),
+          Icon(Icons.shop)
+        ]
+      ),
+    );
   }
 }
