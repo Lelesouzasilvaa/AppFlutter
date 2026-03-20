@@ -1,3 +1,3 @@
 # AppFlutter
 
-![Screenshot do app](assets/telaprincipal.png)
+<img src="flutter_vendinha/assets/telaprincipal.png" width="300"/>
